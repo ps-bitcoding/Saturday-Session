@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Flask: Run App",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/app.py",   // or your flask main file
+        "env": {
+          "FLASK_APP": "app.py",
+          "FLASK_ENV": "development"
+        },
+        "args": [
+          "run",
+          "--no-debugger",   // VSCode will manage debugging itself
+          "--no-reload"
+        ]
+      }
+    ]
+  }
+  
